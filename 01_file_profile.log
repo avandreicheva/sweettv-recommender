@@ -1,0 +1,27 @@
+
+=== dataset11-30.csv ===
+rows=5821987
+cols=['user_id', 'vsetv_id', 'start_time', 'stop_time', 'duraton']
+start_time format='%Y-%m-%d %H:%M:%S' min=2020-03-09 00:00:02 max=2020-07-26 23:58:42
+ISO weeks covered (20): [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+
+=== export_arh_11-20-final.csv ===
+rows=1074235
+cols=['channel_id', 'channel_title', 'start_time', 'duration', 'tv_show_title', 'tv_show_id', 'tv_show_category', 'tv_show_genre_1', 'tv_show_genre_2', 'tv_show_genre_3', 'year_of_production', 'director', 'actors']
+start_time format='%d.%m.%Y %H:%M:%S' min=2020-03-08 23:00:00 max=2020-05-18 11:45:00
+ISO weeks covered (12): [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+
+=== export_arh_21-30-final.csv ===
+rows=1074394
+cols=['channel_id', 'channel_title', 'start_time', 'duration', 'tv_show_title', 'tv_show_id', 'tv_show_category', 'tv_show_genre_1', 'tv_show_genre_2', 'tv_show_genre_3', 'year_of_production', 'director', 'actors']
+start_time format='%d.%m.%Y %H:%M:%S' min=2020-05-18 00:00:00 max=2020-07-27 11:55:00
+ISO weeks covered (11): [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+=== export_arh_31-42-final.csv ===
+rows=1295378
+cols=['channel_id', 'channel_title', 'start_time', 'duration', 'tv_show_title', 'tv_show_id', 'tv_show_category', 'tv_show_genre_1', 'tv_show_genre_2', 'tv_show_genre_3', 'year_of_production', 'director', 'actors']
+start_time format='%d.%m.%Y %H:%M:%S' min=2020-07-27 00:00:00 max=2020-10-19 11:55:00
+ISO weeks covered (13): [31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]
+
+=== submission.csv ===
+rows=1260 cols=['user_id', 'tv_show_id']

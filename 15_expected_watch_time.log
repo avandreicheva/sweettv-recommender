@@ -1,0 +1,50 @@
+PPR score matrix built [1.5s]
+
+=== Stage 1: tune expected-watch-time ranker (engagement_mode x half_life x beta), fallback=[EWT, PPR, popularity] ===
+  mode=ratio   hl=none  beta=  0 MAP@5(ALL)=0.0437 MAP@5(TOP5)=0.0108 [1.71s]
+  mode=ratio   hl=none  beta=0.5 MAP@5(ALL)=0.1659 MAP@5(TOP5)=0.0724 [1.61s]
+  mode=ratio   hl=none  beta=  1 MAP@5(ALL)=0.4506 MAP@5(TOP5)=0.2070 [1.60s]
+  mode=ratio   hl=none  beta=1.5 MAP@5(ALL)=0.5599 MAP@5(TOP5)=0.2378 [1.63s]
+  mode=ratio   hl=28d   beta=  0 MAP@5(ALL)=0.0649 MAP@5(TOP5)=0.0183 [1.64s]
+  mode=ratio   hl=28d   beta=0.5 MAP@5(ALL)=0.2346 MAP@5(TOP5)=0.1034 [1.53s]
+  mode=ratio   hl=28d   beta=  1 MAP@5(ALL)=0.4803 MAP@5(TOP5)=0.2161 [1.42s]
+  mode=ratio   hl=28d   beta=1.5 MAP@5(ALL)=0.5736 MAP@5(TOP5)=0.2429 [1.58s]
+  mode=ratio   hl=14d   beta=  0 MAP@5(ALL)=0.0844 MAP@5(TOP5)=0.0261 [1.53s]
+  mode=ratio   hl=14d   beta=0.5 MAP@5(ALL)=0.2605 MAP@5(TOP5)=0.1148 [1.47s]
+  mode=ratio   hl=14d   beta=  1 MAP@5(ALL)=0.4827 MAP@5(TOP5)=0.2168 [1.54s]
+  mode=ratio   hl=14d   beta=1.5 MAP@5(ALL)=0.5727 MAP@5(TOP5)=0.2426 [1.61s]
+  mode=seconds hl=none  beta=  0 MAP@5(ALL)=0.5139 MAP@5(TOP5)=0.2304 [0.99s]
+  mode=seconds hl=none  beta=0.5 MAP@5(ALL)=0.5806 MAP@5(TOP5)=0.2435 [0.87s]
+  mode=seconds hl=none  beta=  1 MAP@5(ALL)=0.5667 MAP@5(TOP5)=0.2280 [0.86s]
+  mode=seconds hl=none  beta=1.5 MAP@5(ALL)=0.5427 MAP@5(TOP5)=0.2115 [0.96s]
+  mode=seconds hl=28d   beta=  0 MAP@5(ALL)=0.5372 MAP@5(TOP5)=0.2371 [1.00s]
+  mode=seconds hl=28d   beta=0.5 MAP@5(ALL)=0.5996 MAP@5(TOP5)=0.2506 [0.94s]
+  mode=seconds hl=28d   beta=  1 MAP@5(ALL)=0.5906 MAP@5(TOP5)=0.2367 [0.84s]
+  mode=seconds hl=28d   beta=1.5 MAP@5(ALL)=0.5699 MAP@5(TOP5)=0.2227 [0.91s]
+  mode=seconds hl=14d   beta=  0 MAP@5(ALL)=0.5338 MAP@5(TOP5)=0.2358 [0.98s]
+  mode=seconds hl=14d   beta=0.5 MAP@5(ALL)=0.6011 MAP@5(TOP5)=0.2507 [0.91s]
+  mode=seconds hl=14d   beta=  1 MAP@5(ALL)=0.5979 MAP@5(TOP5)=0.2401 [0.94s]
+  mode=seconds hl=14d   beta=1.5 MAP@5(ALL)=0.5832 MAP@5(TOP5)=0.2279 [0.91s]
+
+-> best EWT config: mode=seconds half_life=14d beta=0.5  MAP@5(ALL)=0.6011 MAP@5(TOP5)=0.2507
+
+=== Stage 2: re-tune hybrid fusion weight w (EWT + PPR) ===
+  w=0.0  MAP@5(ALL)=0.5806 MAP@5(TOP5)=0.2395 [0.85s]
+  w=0.1  MAP@5(ALL)=0.6003 MAP@5(TOP5)=0.2510 [0.91s]
+  w=0.2  MAP@5(ALL)=0.6042 MAP@5(TOP5)=0.2522 [0.70s]
+  w=0.3  MAP@5(ALL)=0.6053 MAP@5(TOP5)=0.2522 [0.62s]
+  w=0.4  MAP@5(ALL)=0.6042 MAP@5(TOP5)=0.2517 [0.56s]
+  w=0.5  MAP@5(ALL)=0.6034 MAP@5(TOP5)=0.2517 [0.59s]
+  w=0.6  MAP@5(ALL)=0.6028 MAP@5(TOP5)=0.2514 [0.58s]
+  w=0.7  MAP@5(ALL)=0.6022 MAP@5(TOP5)=0.2512 [0.57s]
+  w=0.8  MAP@5(ALL)=0.6018 MAP@5(TOP5)=0.2510 [0.58s]
+  w=0.9  MAP@5(ALL)=0.6014 MAP@5(TOP5)=0.2506 [0.56s]
+  w=1.0  MAP@5(ALL)=0.6011 MAP@5(TOP5)=0.2507 [0.11s]
+
+-> best Hybrid v2 config: w=0.2  MAP@5(ALL)=0.6042 MAP@5(TOP5)=0.2522
+
+=== Hybrid v1 (user-history+PPR) vs Hybrid v2 (expected-watch-time+PPR) ===
+Hybrid v1: MAP@5(ALL)=0.6222 MAP@5(TOP5)=0.2504
+Hybrid v2: MAP@5(ALL)=0.6042 MAP@5(TOP5)=0.2522  (Δ TOP5 = +0.0018)
+
+total runtime: 39.2s

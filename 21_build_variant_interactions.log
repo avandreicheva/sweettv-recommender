@@ -1,0 +1,18 @@
+interactions_TRAIN_A_countdays: 335439 pairs, 4823 users, 2807 shows [6.2s]
+saved interactions_TRAIN_A_countdays: 335439 rows -> interactions_TRAIN_A_countdays.parquet / interactions_TRAIN_A_countdays.csv
+interactions_TRAIN_FULL_countdays: 584679 pairs, 4884 users, 4182 shows [7.1s]
+saved interactions_TRAIN_FULL_countdays: 584679 rows -> interactions_TRAIN_FULL_countdays.parquet / interactions_TRAIN_FULL_countdays.csv
+
+threshold: overlap_sec>=60, overlap_frac>=0.20
+interactions_TRAIN_A_60_20: 335634 pairs, 4823 users, 2807 shows [6.0s]
+saved interactions_TRAIN_A_60_20: 335634 rows -> interactions_TRAIN_A_60_20.parquet / interactions_TRAIN_A_60_20.csv
+interactions_TRAIN_FULL_60_20: 584909 pairs, 4884 users, 4182 shows [6.8s]
+saved interactions_TRAIN_FULL_60_20: 584909 rows -> interactions_TRAIN_FULL_60_20.parquet / interactions_TRAIN_FULL_60_20.csv
+
+threshold: overlap_sec>=300, overlap_frac>=0.20
+interactions_TRAIN_A_300_20: 333380 pairs, 4821 users, 2807 shows [6.1s]
+saved interactions_TRAIN_A_300_20: 333380 rows -> interactions_TRAIN_A_300_20.parquet / interactions_TRAIN_A_300_20.csv
+interactions_TRAIN_FULL_300_20: 582135 pairs, 4883 users, 4182 shows [6.8s]
+saved interactions_TRAIN_FULL_300_20: 582135 rows -> interactions_TRAIN_FULL_300_20.parquet / interactions_TRAIN_FULL_300_20.csv
+
+total runtime: 45.7s

@@ -1,0 +1,12 @@
+[loose] train rows=842555 users=4841 shows=2975  population=4893
+  [alpha=0.5] PPR built [2.0s]
+  [alpha=0.5] done, 120 combos so far, best so far mean_score=0.4785 [79.0s]
+  [alpha=0.7] PPR built [2.0s]
+  [alpha=0.7] done, 240 combos so far, best so far mean_score=0.4797 [75.8s]
+  [alpha=0.8] PPR built [1.9s]
+  [alpha=0.8] done, 360 combos so far, best so far mean_score=0.4797 [75.5s]
+  [alpha=0.9] PPR built [1.9s]
+  [alpha=0.9] done, 480 combos so far, best so far mean_score=0.4800 [74.3s]
+
+[loose] BEST: alpha=0.9 half_life=7 beta=2 w=0.2  mean_score=0.4800 (ALL=0.6320 TOP10=0.3554 TOP20=0.4527)
+total runtime: 305.7s  (480 combos)

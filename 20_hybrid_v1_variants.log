@@ -1,0 +1,38 @@
+[hl_none] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': None, 'basis': 'both', 'fill_chain': False}  ALL=0.6093 TOP10=0.3469 TOP20=0.4376 mean=0.4646  [5.2s]
+   -> submission_v1_hl_none.csv: OK
+[hl_28] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 28, 'basis': 'both', 'fill_chain': False}  ALL=0.6191 TOP10=0.3520 TOP20=0.4460 mean=0.4724  [3.8s]
+   -> submission_v1_hl_28.csv: OK
+[hl_56] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 56, 'basis': 'both', 'fill_chain': False}  ALL=0.6153 TOP10=0.3502 TOP20=0.4431 mean=0.4695  [4.1s]
+   -> submission_v1_hl_56.csv: OK
+[w_0.6] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.6, 'half_life': 14, 'basis': 'both', 'fill_chain': True}  ALL=0.6191 TOP10=0.3527 TOP20=0.4461 mean=0.4726  [4.4s]
+   -> submission_v1_w_0.6.csv: OK
+[w_0.8] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.8, 'half_life': 14, 'basis': 'both', 'fill_chain': True}  ALL=0.6168 TOP10=0.3520 TOP20=0.4451 mean=0.4713  [4.6s]
+   -> submission_v1_w_0.8.csv: OK
+[w_1.0] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 1.0, 'half_life': 14, 'basis': 'both', 'fill_chain': True}  ALL=0.6136 TOP10=0.3511 TOP20=0.4433 mean=0.4693  [4.2s]
+   -> submission_v1_w_1.0.csv: OK
+[beta_0] {'join': 'strict', 'alpha': 0.8, 'beta': 0, 'w': 0.4, 'half_life': 14, 'basis': 'both', 'fill_chain': False}  ALL=0.5926 TOP10=0.3443 TOP20=0.4324 mean=0.4564  [5.5s]
+   -> submission_v1_beta_0.csv: OK
+[beta_0.5] {'join': 'strict', 'alpha': 0.8, 'beta': 0.5, 'w': 0.4, 'half_life': 14, 'basis': 'both', 'fill_chain': False}  ALL=0.6111 TOP10=0.3506 TOP20=0.4423 mean=0.4680  [5.2s]
+   -> submission_v1_beta_0.5.csv: OK
+[loose_join] {'join': 'loose', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'both', 'fill_chain': False}  ALL=0.6130 TOP10=0.3528 TOP20=0.4454 mean=0.4704  [5.9s]
+   -> submission_v1_loose_join.csv: OK
+[basis_count] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'fill_chain': False}  ALL=0.6377 TOP10=0.3445 TOP20=0.4436 mean=0.4753  [4.9s]
+   -> submission_v1_basis_count.csv: OK
+[basis_seconds] {'join': 'strict', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'seconds', 'fill_chain': False}  ALL=0.6082 TOP10=0.3540 TOP20=0.4444 mean=0.4688  [5.3s]
+   -> submission_v1_basis_seconds.csv: OK
+
+=== VARIANT SUMMARY (sorted by mean_score) ===
+      variant  map_all  map_top10  map_top20  mean_score  format_ok
+  basis_count 0.637720   0.344531   0.443622    0.475291       True
+        w_0.6 0.619101   0.352724   0.446054    0.472626       True
+        hl_28 0.619087   0.351967   0.445999    0.472351       True
+        w_0.8 0.616830   0.351982   0.445064    0.471292       True
+   loose_join 0.612961   0.352818   0.445386    0.470388       True
+        hl_56 0.615278   0.350236   0.443079    0.469531       True
+        w_1.0 0.613637   0.351075   0.443292    0.469335       True
+basis_seconds 0.608169   0.353982   0.444375    0.468842       True
+     beta_0.5 0.611094   0.350632   0.442273    0.468000       True
+      hl_none 0.609299   0.346882   0.437572    0.464584       True
+       beta_0 0.592600   0.344254   0.432394    0.456416       True
+
+total runtime: 106.6s

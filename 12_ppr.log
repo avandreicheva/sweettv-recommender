@@ -1,0 +1,14 @@
+graph: 2807 item nodes, 4823 users with history, pool items in vocab: 2084/6363
+graph build time: 0.3s  (P=(2807, 2807), R=(2807, 4823))
+  alpha=0.30  MAP@5(ALL)=0.5231 MAP@5(TOP5)=0.2325  solve=0.7s total=0.9s
+  alpha=0.50  MAP@5(ALL)=0.5351 MAP@5(TOP5)=0.2353  solve=0.8s total=1.0s
+  alpha=0.60  MAP@5(ALL)=0.5449 MAP@5(TOP5)=0.2366  solve=0.8s total=1.1s
+  alpha=0.70  MAP@5(ALL)=0.5592 MAP@5(TOP5)=0.2383  solve=0.8s total=1.0s
+  alpha=0.75  MAP@5(ALL)=0.5683 MAP@5(TOP5)=0.2392  solve=1.0s total=1.2s
+  alpha=0.80  MAP@5(ALL)=0.5806 MAP@5(TOP5)=0.2395  solve=1.0s total=1.3s
+  alpha=0.85  MAP@5(ALL)=0.5941 MAP@5(TOP5)=0.2372  solve=0.9s total=1.2s
+  alpha=0.90  MAP@5(ALL)=0.6104 MAP@5(TOP5)=0.2288  solve=0.9s total=1.1s
+  alpha=0.95  MAP@5(ALL)=0.6140 MAP@5(TOP5)=0.2046  solve=0.8s total=1.1s
+
+-> best PPR config: alpha=0.8 MAP@5(ALL)=0.5806 MAP@5(TOP5)=0.2395
+total runtime: 10.4s

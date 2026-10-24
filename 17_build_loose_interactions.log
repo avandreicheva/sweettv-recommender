@@ -1,0 +1,7 @@
+loose join thresholds: overlap_sec>=60, overlap_frac>=0.0
+interactions_TRAIN_A_loose: 842555 unique (user, tv_show_id) pairs, 4841 users, 2975 shows [6.2s]
+saved interactions_TRAIN_A_loose: 842555 rows -> interactions_TRAIN_A_loose.parquet / interactions_TRAIN_A_loose.csv
+interactions_TRAIN_FULL_loose: 1350435 unique (user, tv_show_id) pairs, 4895 users, 4362 shows [7.1s]
+saved interactions_TRAIN_FULL_loose: 1350435 rows -> interactions_TRAIN_FULL_loose.parquet / interactions_TRAIN_FULL_loose.csv
+
+total runtime: 19.2s

@@ -1,0 +1,8 @@
+TRAIN_FULL_loose: 1350435 rows, 4895 users, 4362 shows
+PPR built [3.5s]
+history score built [0.2s]
+submission_hybrid_v3.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+
+Hybrid v3 settings: join=loose,alpha=0.85,hl=7d,airing_beta=2,w=0.3
+validation mean(ALL,TOP10,TOP20)=0.4804 (ALL=0.6302 TOP10=0.3569 TOP20=0.4539)
+total runtime: 5.0s

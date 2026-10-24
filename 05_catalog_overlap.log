@@ -1,0 +1,5 @@
+distinct labelled tv_show_id in weeks 11-30: 8234
+distinct labelled tv_show_id in weeks 31-42: 6636
+distinct shows in both (31-42 ∩ 11-30): 5199 (78.3% of 31-42 catalog)
+labelled airings (rows) in weeks 31-42: 144774
+  of which the show was already seen in weeks 11-30: 138467 (95.6%)

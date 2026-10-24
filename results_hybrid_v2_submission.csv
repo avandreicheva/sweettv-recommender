@@ -1,0 +1,2 @@
+method,settings,map_all,map_top5,file,time_s
+Hybrid_v2,"ewt_mode=seconds,ewt_half_life=14d,ewt_beta=0.5,ppr_alpha=0.8,w=0.2",0.6042,0.2522,submission_hybrid_v2.csv,3.9013421535491943

@@ -1,0 +1,6 @@
+method,settings,map_all,map_top5,file,time_s
+Popularity,by=total_watched_seconds,0.542,0.1521,submission_popularity.csv,0.03308606147766113
+User-history,"basis=both,half_life=14d",0.5894,0.2455,submission_user_history.csv,0.10267400741577148
+ALS,"factors=20,a=0.05",0.5315,0.1412,submission_als.csv,1.7592618465423584
+PPR,alpha=0.8,0.5806,0.2395,submission_ppr.csv,2.8731939792633057
+Hybrid,"w=0.4,airing_beta=1",0.6222,0.2504,submission_hybrid.csv,1.0771150588989258

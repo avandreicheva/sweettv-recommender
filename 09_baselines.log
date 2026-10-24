@@ -1,0 +1,24 @@
+TRAIN_A: 335439 rows, 4823 users
+VAL: 312882 rows, 4774 users
+candidate pool (VAL window): 6363 shows
+
+population (TRAIN_A users U VAL users): 4884
+R_u size stats: mean=64.06 median=49 min=0 max=428
+  p50 = 49
+  p75 = 91
+  p90 = 140
+  p95 = 176
+  p99 = 252
+users with empty R_u: 110 (2.3%)
+
+=== Popularity baseline ===
+top5 (global): [2400480, 240081, 2400467, 2400508, 6500479]
+MAP@5 = 0.5719  (scored 4774/4884, empty R_u excluded: 110)
+build time: 0.02s, eval time: 0.01s
+
+=== User-history ranker (recency-weighted watched_seconds, half-life=14d, popularity fill) ===
+MAP@5 = 0.5341  (scored 4774/4884, empty R_u excluded: 110)
+build time: 0.17s, eval time: 0.01s
+
+saved preds_popularity_VAL.csv, preds_user_history_VAL.csv, ground_truth_VAL.csv
+total runtime: 6.4s  (seed=42)

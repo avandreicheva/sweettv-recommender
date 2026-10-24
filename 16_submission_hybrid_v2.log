@@ -1,0 +1,10 @@
+PPR matrix (TRAIN_FULL) built [2.6s]
+EWT matrix (TRAIN_FULL) built [0.9s]
+Hybrid v2 -> submission_hybrid_v2.csv
+submission_hybrid_v2.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+
+=== Hybrid v1 vs Hybrid v2 ===
+Hybrid v1: settings=w=0.4,airing_beta=1            MAP@5(ALL)=0.6222 MAP@5(TOP5)=0.2504 file=submission_hybrid.csv
+Hybrid v2: settings=ewt_mode=seconds,ewt_half_life=14d,ewt_beta=0.5,ppr_alpha=0.8,w=0.2 MAP@5(ALL)=0.6042 MAP@5(TOP5)=0.2522 file=submission_hybrid_v2.csv
+
+total runtime: 3.9s  (seed=42)

@@ -1,0 +1,15 @@
+rows=5821987
+distinct users=4914
+distinct channels (vsetv_id)=202
+duraton: min=61 max=342145 mean=1480.5 std=3123.7
+duraton<=0 count=0 (0.000%)
+approx duraton quantiles (seconds):
+  p 1 = 62s  (1.0 min)
+  p 5 = 70s  (1.2 min)
+  p10 = 80s  (1.3 min)
+  p25 = 134s  (2.2 min)
+  p50 = 396s  (6.6 min)
+  p75 = 1470s  (24.5 min)
+  p90 = 3984s  (66.4 min)
+  p95 = 6466s  (107.8 min)
+  p99 = 14357s  (239.3 min)

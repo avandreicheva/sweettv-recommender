@@ -1,0 +1,25 @@
+submission template: 1260 users, header=['user_id', 'tv_show_id']
+TRAIN_FULL: 584679 rows, 4884 users, 4182 shows
+TEST candidate pool: 6636 shows
+Popularity -> submission_popularity.csv [0.0s]
+User-history -> submission_user_history.csv [0.1s]
+ALS -> submission_als.csv [1.8s]
+PPR -> submission_ppr.csv [2.9s]
+Hybrid -> submission_hybrid.csv [1.1s]
+
+=== validation ===
+submission_popularity.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+submission_user_history.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+submission_als.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+submission_ppr.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+submission_hybrid.csv: OK (1260 rows, exact user order, 5 distinct ids/row)
+
+=== FINAL TABLE ===
+      method                 settings  map_all  map_top5                        file   time_s
+  Popularity by=total_watched_seconds   0.5420    0.1521   submission_popularity.csv 0.033086
+User-history basis=both,half_life=14d   0.5894    0.2455 submission_user_history.csv 0.102674
+         ALS        factors=20,a=0.05   0.5315    0.1412          submission_als.csv 1.759262
+         PPR                alpha=0.8   0.5806    0.2395          submission_ppr.csv 2.873194
+      Hybrid      w=0.4,airing_beta=1   0.6222    0.2504       submission_hybrid.csv 1.077115
+
+total runtime: 6.0s  (seed=42)

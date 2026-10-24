@@ -1,0 +1,18 @@
+loading schedules...
+  11-20 labelled rows: 115613
+  21-30 labelled rows: 121505
+  11-30 (combined, dedup) labelled rows: 237118
+interactions_TRAIN_A: loaded 3945173 view rows (weeks 11-20)
+interactions_TRAIN_A: 886408 passing (view,programme) interaction events
+interactions_TRAIN_A: 335439 unique (user, tv_show_id) pairs, 4823 users, 2807 shows [6.0s]
+saved interactions_TRAIN_A: 335439 rows -> interactions_TRAIN_A.parquet / interactions_TRAIN_A.csv
+interactions_VAL: loaded 1876814 view rows (weeks 21-30)
+interactions_VAL: 639115 passing (view,programme) interaction events
+interactions_VAL: 312882 unique (user, tv_show_id) pairs, 4774 users, 3088 shows [5.3s]
+saved interactions_VAL: 312882 rows -> interactions_VAL.parquet / interactions_VAL.csv
+interactions_TRAIN_FULL: loaded 5821987 view rows (weeks 11-30)
+interactions_TRAIN_FULL: 1525870 passing (view,programme) interaction events
+interactions_TRAIN_FULL: 584679 unique (user, tv_show_id) pairs, 4884 users, 4182 shows [6.9s]
+saved interactions_TRAIN_FULL: 584679 rows -> interactions_TRAIN_FULL.parquet / interactions_TRAIN_FULL.csv
+
+total runtime: 26.6s

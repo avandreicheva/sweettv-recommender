@@ -1,0 +1,52 @@
+history score matrix built [0.4s]
+PPR score matrix built [1.2s]
+
+=== Stage 1: fusion weight w (hybrid, no airing factor) ===
+  w=0.0                                         MAP@5(ALL)=0.5806 MAP@5(TOP5)=0.2395  [0.55s]
+  w=0.1                                         MAP@5(ALL)=0.5915 MAP@5(TOP5)=0.2455  [0.54s]
+  w=0.2                                         MAP@5(ALL)=0.5928 MAP@5(TOP5)=0.2460  [0.53s]
+  w=0.3                                         MAP@5(ALL)=0.5923 MAP@5(TOP5)=0.2458  [0.53s]
+  w=0.4                                         MAP@5(ALL)=0.5926 MAP@5(TOP5)=0.2461  [0.56s]
+  w=0.5                                         MAP@5(ALL)=0.5923 MAP@5(TOP5)=0.2459  [0.53s]
+  w=0.6                                         MAP@5(ALL)=0.5924 MAP@5(TOP5)=0.2460  [0.52s]
+  w=0.7                                         MAP@5(ALL)=0.5916 MAP@5(TOP5)=0.2460  [0.52s]
+  w=0.8                                         MAP@5(ALL)=0.5909 MAP@5(TOP5)=0.2460  [0.53s]
+  w=0.9                                         MAP@5(ALL)=0.5904 MAP@5(TOP5)=0.2458  [0.52s]
+  w=1.0                                         MAP@5(ALL)=0.5894 MAP@5(TOP5)=0.2455  [0.06s]
+-> best w=0.4  MAP@5(TOP5)=0.2461
+
+=== Stage 2: airing-frequency factor on HISTORY alone ===
+  history beta=0                                MAP@5(ALL)=0.5894 MAP@5(TOP5)=0.2455  [0.06s]
+  history beta=0.25                             MAP@5(ALL)=0.5977 MAP@5(TOP5)=0.2466  [0.08s]
+  history beta=0.5                              MAP@5(ALL)=0.6038 MAP@5(TOP5)=0.2477  [0.06s]
+  history beta=1                                MAP@5(ALL)=0.6135 MAP@5(TOP5)=0.2494  [0.06s]
+  history beta=2                                MAP@5(ALL)=0.6260 MAP@5(TOP5)=0.2508  [0.06s]
+-> best beta=2  MAP@5(TOP5)=0.2508  (gain over beta=0: +0.0053)
+
+=== Stage 3: airing-frequency factor on PPR alone ===
+  ppr beta=0                                    MAP@5(ALL)=0.5806 MAP@5(TOP5)=0.2395  [0.53s]
+  ppr beta=0.25                                 MAP@5(ALL)=0.5996 MAP@5(TOP5)=0.2426  [0.58s]
+  ppr beta=0.5                                  MAP@5(ALL)=0.6126 MAP@5(TOP5)=0.2442  [0.52s]
+  ppr beta=1                                    MAP@5(ALL)=0.6260 MAP@5(TOP5)=0.2433  [0.52s]
+  ppr beta=2                                    MAP@5(ALL)=0.6220 MAP@5(TOP5)=0.2335  [0.52s]
+-> best beta=0.5  MAP@5(TOP5)=0.2442  (gain over beta=0: +0.0048)
+
+=== Stage 4: airing-frequency factor on HYBRID (w=0.4) ===
+  hybrid beta=0                                 MAP@5(ALL)=0.5926 MAP@5(TOP5)=0.2461  [0.54s]
+  hybrid beta=0.25                              MAP@5(ALL)=0.6029 MAP@5(TOP5)=0.2479  [0.53s]
+  hybrid beta=0.5                               MAP@5(ALL)=0.6111 MAP@5(TOP5)=0.2493  [0.52s]
+  hybrid beta=1                                 MAP@5(ALL)=0.6222 MAP@5(TOP5)=0.2504  [0.52s]
+  hybrid beta=2                                 MAP@5(ALL)=0.6328 MAP@5(TOP5)=0.2492  [0.52s]
+-> best beta=1  MAP@5(TOP5)=0.2504  (gain over beta=0: +0.0043)
+
+=== Component gain summary (TOP-5 preferred truth) ===
+History alone                 : 0.2455
+PPR alone                      : 0.2395
+Hybrid fusion (best w=0.4) : 0.2461  (fusion gain over best single: +0.0006)
+History + airing (best beta)   : 0.2508  (airing gain: +0.0053)
+PPR + airing (best beta)       : 0.2442  (airing gain: +0.0048)
+Hybrid + airing (best beta)    : 0.2504  (airing gain: +0.0043)
+
+-> BEST OVERALL: History+airing  MAP@5(TOP5)=0.2508
+
+total runtime: 15.8s

@@ -1,0 +1,38 @@
+[hl_28] {'train_table': '', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 28, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6400 TOP10=0.3444 TOP20=0.4432 mean=0.4759  [3.8s]
+   -> submission_v4_hl_28.csv: OK
+[hl_56] {'train_table': '', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 56, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6362 TOP10=0.3419 TOP20=0.4397 mean=0.4726  [3.7s]
+   -> submission_v4_hl_56.csv: OK
+[hl_none] {'train_table': '', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': None, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6280 TOP10=0.3377 TOP20=0.4340 mean=0.4666  [3.6s]
+   -> submission_v4_hl_none.csv: OK
+[beta_1.5] {'train_table': '', 'alpha': 0.8, 'beta': 1.5, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6399 TOP10=0.3420 TOP20=0.4417 mean=0.4745  [3.8s]
+   -> submission_v4_beta_1.5.csv: OK
+[beta_2] {'train_table': '', 'alpha': 0.8, 'beta': 2, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6406 TOP10=0.3376 TOP20=0.4381 mean=0.4721  [3.7s]
+   -> submission_v4_beta_2.csv: OK
+[w_0.6] {'train_table': '', 'alpha': 0.8, 'beta': 1, 'w': 0.6, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6338 TOP10=0.3418 TOP20=0.4403 mean=0.4720  [3.7s]
+   -> submission_v4_w_0.6.csv: OK
+[w_0.8] {'train_table': '', 'alpha': 0.8, 'beta': 1, 'w': 0.8, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6317 TOP10=0.3403 TOP20=0.4384 mean=0.4701  [3.8s]
+   -> submission_v4_w_0.8.csv: OK
+[ppr_restart_count] {'train_table': '', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'restart_col': 'count', 'fill_chain': False}  ALL=0.6402 TOP10=0.3392 TOP20=0.4391 mean=0.4728  [3.6s]
+   -> submission_v4_ppr_restart_count.csv: OK
+[count_days] {'train_table': 'countdays', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6449 TOP10=0.3483 TOP20=0.4492 mean=0.4808  [3.6s]
+   -> submission_v4_count_days.csv: OK
+[thresh_60_20] {'train_table': '60_20', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6373 TOP10=0.3443 TOP20=0.4432 mean=0.4750  [3.5s]
+   -> submission_v4_thresh_60_20.csv: OK
+[thresh_300_20] {'train_table': '300_20', 'alpha': 0.8, 'beta': 1, 'w': 0.4, 'half_life': 14, 'basis': 'count', 'restart_col': 'watched_seconds', 'fill_chain': False}  ALL=0.6357 TOP10=0.3476 TOP20=0.4461 mean=0.4765  [3.4s]
+   -> submission_v4_thresh_300_20.csv: OK
+
+=== VARIANT SUMMARY (sorted by mean_score) ===
+          variant  map_all  map_top10  map_top20  mean_score  format_ok
+       count_days 0.644901   0.348250   0.449223    0.480791       True
+    thresh_300_20 0.635720   0.347617   0.446113    0.476483       True
+            hl_28 0.639978   0.344404   0.443186    0.475856       True
+     thresh_60_20 0.637341   0.344342   0.443213    0.474965       True
+         beta_1.5 0.639940   0.341960   0.441706    0.474535       True
+ppr_restart_count 0.640208   0.339174   0.439109    0.472830       True
+            hl_56 0.636193   0.341903   0.439687    0.472595       True
+           beta_2 0.640563   0.337632   0.438073    0.472090       True
+            w_0.6 0.633811   0.341761   0.440311    0.471961       True
+            w_0.8 0.631733   0.340274   0.438364    0.470124       True
+          hl_none 0.628016   0.337685   0.433961    0.466554       True
+
+total runtime: 82.8s

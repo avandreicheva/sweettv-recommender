@@ -1,0 +1,29 @@
+population=4884  pool=6363
+gt_all empty_Ru share handled by evaluator; gt_top5 sizes -> mean=4.80
+
+=== Popularity: tuning ranking signal ===
+  by=distinct_viewers       MAP@5(ALL)=0.5719 MAP@5(TOP5)=0.1475  top5=[2400480, 240081, 2400467, 2400508, 6500479]  [0.03s]
+  by=total_watched_seconds  MAP@5(ALL)=0.5420 MAP@5(TOP5)=0.1521  top5=[2400480, 240081, 2400508, 20088, 6500479]  [0.02s]
+  -> best popularity variant: by=total_watched_seconds
+
+=== User-history: tuning score basis x recency half-life ===
+  basis=seconds half_life=7d    MAP@5(ALL)=0.5158 MAP@5(TOP5)=0.2273 [0.17s]
+  basis=seconds half_life=14d   MAP@5(ALL)=0.5335 MAP@5(TOP5)=0.2357 [0.17s]
+  basis=seconds half_life=28d   MAP@5(ALL)=0.5369 MAP@5(TOP5)=0.2370 [0.19s]
+  basis=seconds half_life=none  MAP@5(ALL)=0.5136 MAP@5(TOP5)=0.2303 [0.16s]
+  basis=count   half_life=7d    MAP@5(ALL)=0.5840 MAP@5(TOP5)=0.2292 [0.16s]
+  basis=count   half_life=14d   MAP@5(ALL)=0.6040 MAP@5(TOP5)=0.2355 [0.16s]
+  basis=count   half_life=28d   MAP@5(ALL)=0.6116 MAP@5(TOP5)=0.2363 [0.16s]
+  basis=count   half_life=none  MAP@5(ALL)=0.5979 MAP@5(TOP5)=0.2313 [0.18s]
+  basis=both    half_life=7d    MAP@5(ALL)=0.5826 MAP@5(TOP5)=0.2431 [0.16s]
+  basis=both    half_life=14d   MAP@5(ALL)=0.5894 MAP@5(TOP5)=0.2455 [0.16s]
+  basis=both    half_life=28d   MAP@5(ALL)=0.5874 MAP@5(TOP5)=0.2447 [0.16s]
+  basis=both    half_life=none  MAP@5(ALL)=0.5751 MAP@5(TOP5)=0.2412 [0.16s]
+
+-> best user-history config: basis=both half_life=14d
+
+=== SUMMARY (best per method) ===
+Popularity[total_watched_seconds]: MAP@5(ALL)=0.5420 MAP@5(TOP5)=0.1521
+User-history[basis=both,hl=14d]: MAP@5(ALL)=0.5894 MAP@5(TOP5)=0.2455
+
+total runtime: 2.3s
